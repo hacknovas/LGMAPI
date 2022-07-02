@@ -96,7 +96,7 @@ export class UserS extends Component {
     render() {
         return (
             <div className="container my-3 ">
-                <h2>TOP Headlines</h2>
+                <h2 className='text-white bg-dark text-center'>All Users</h2>
                 <div className="row">
                     {this.state.data.map((element) => {
                         return <div className="col-md-4" key={element.id}>
