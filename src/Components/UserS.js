@@ -96,7 +96,10 @@ export class UserS extends Component {
     render() {
         return (
             <div className="container my-3 ">
-                <h2 className='text-white bg-dark text-center'>All Users</h2>
+                <a className='float-end text-white' href='/' style={{ textDecoration: "none" }}>
+                    <img src="./1.png" width="30" height="30" /> Home</a>
+                <h2 className='text-white bg-dark text-center'>
+                    All Users</h2>
                 <div className="row">
                     {this.state.data.map((element) => {
                         return <div className="col-md-4" key={element.id}>
@@ -108,7 +111,7 @@ export class UserS extends Component {
                     <button disabled={this.state.page <= 1} type="button" class="btn btn-dark " onClick={this.handlePreClick}>Previous Page</button>
                     <button type="button" className="btn btn-dark " onClick={this.handleNextClick}>Next Page</button>
                 </div>
-            </div>
+            </div >
         )
     }
 }
