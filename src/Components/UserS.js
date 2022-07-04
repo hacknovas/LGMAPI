@@ -95,11 +95,8 @@ export class UserS extends Component {
 
     render() {
         return (
+            
             <div className="container my-3 ">
-                <a className='float-end text-white' href='/' style={{ textDecoration: "none" }}>
-                    <img src="./1.png" width="30" height="30" /> Home</a>
-                <h2 className='text-white bg-dark text-center'>
-                    All Users</h2>
                 <div className="row">
                     {this.state.data.map((element) => {
                         return <div className="col-md-4" key={element.id}>
